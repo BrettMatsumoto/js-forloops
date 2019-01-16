@@ -184,8 +184,17 @@ console.log(copyArray(valuesArray, copyValuesArray));
 Declare a variable named `topQuote` and assign it to a String value of your favorite one line quote.
 Write a function that will iterate through the string value and return the longest word in that quote. Console.log your result.
 */
-
-
+var topQuote = 'Only in the dictionary does success come before work.';
+function longestWord(string){
+   var strToArray = string.split(" ");
+   var currentWord = "";
+   for (i=0;i<strToArray.length;i++){
+      if (strToArray[i].length > currentWord.length){
+      currentWord = strToArray[i]}
+   }
+   return currentWord;
+}
+console.log(longestWord(topQuote));
 
 /* 12) Puppet Master
 Declare a variable named `miscStorage` set it's value to be: `[ [], 'Carrots', 9, 'Beets', {}, {name: "Todd B."}, 'Mush' ]`
@@ -227,4 +236,3 @@ The function will iterate through the `cohort` argument and check each student's
 If the `enrolled` property is set to `true` then change that student's `graduated` property to `true`. Otherwise, if `enrolled` is set to `false` then change `enrolled` to `true` leaving `graduated` alone and unchanged.
 Console.log your result.
 */
-

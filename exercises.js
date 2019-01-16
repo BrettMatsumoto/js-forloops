@@ -220,6 +220,20 @@ Write a function that will capitalize the first letter in each word in the phras
 */
 
 var myWay = "i've lived a life that's full, i've traveled each and every highway. but more, much more than this. i did it my way.";
+function toTitleCase(str){
+   return str.replace(/\w\S*/g, function(txt){
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+   })
+}
+console.log(toTitleCase(myWay));
+
+//in this function i use a regex (regular expression) that looks like "/\w\S*/g"
+/* 
+the '/' stands for the start of the regular expression
+\w looks for all the word characters of a string. meaning characters from a-z, A-Z, 0-9, including the '_' character.
+/S looks for characters that is NOT a 'whitespace' charcter, whereas /s does. whitespace characters are spaces and tabs.
+/g  selects each instance.
+*/
 
 
 

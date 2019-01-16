@@ -9,6 +9,11 @@ Write a for-loop that will iterate through 20 numbers (starting at 1 and ending 
 "Now serving 20."
 */
 
+var serving = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+for (i=0;i<serving.length;i++){
+console.log('Now serving',serving[i]);   
+}
+
 
 /* 2) Pop Charts
 Write a for-loop that will iterate through the topFive array below and console.log the following message:

@@ -129,6 +129,12 @@ nope
 turn
 */
 
+for (i=6;i>oopsArray.length;i--){
+   if (i%2 === 1){
+      oopsArray[i] = 'nope';
+   }
+}
+console.log(oopsArray.reverse());
 
 /* 9) Siesta Time
 Declare a variable named `napSchedule` and assign its value to the following array: `[false, false, true, false, true, true]`
